@@ -16,7 +16,7 @@
 title: Your awesome title
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hello my sayang.  You are awesome!
+  Test push file for publishing
 baseurl: "/github-pages-with-docker" # the subpath of your site, e.g. /blog
 url: "https://auroleap.github.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
