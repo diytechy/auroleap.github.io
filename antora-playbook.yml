@@ -5,11 +5,13 @@ site:
   start_page: component-b::index.adoc
 content:
   sources:
-  - url: https://gitlab.com/antora/demo/demo-component-a.git
+  - url: .
     branches: HEAD
     # setting edit_url to false disables the Edit this Page link for any page that originates from this repository
     # the same thing can be achieved by adding empty credentials (i.e., @) in front of the domain in the URL
     edit_url: false
+    #snapshot: true
+    start_path: demo-component-a
   - url: https://gitlab.com/antora/demo/demo-component-b.git
     branches: [main, v2.0, v1.0]
     start_path: docs
