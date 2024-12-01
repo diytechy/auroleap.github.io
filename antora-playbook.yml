@@ -1,7 +1,7 @@
 site:
-  title: Antora Demo Site
+  title: AuroLeap
   # the 404 page and sitemap files only get generated when the url property is set
-  #url: https://antora.gitlab.io/demo/docs-site
+  url: https://docs.demo.com
   start_page: component-b::index.adoc
 content:
   sources:
@@ -21,5 +21,5 @@ asciidoc:
     page-pagination: ''
 ui:
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    url: ui-bundle
     snapshot: true
