@@ -12,9 +12,11 @@ content:
     edit_url: false
     #snapshot: true
     start_path: demo-component-a
-  - url: https://gitlab.com/antora/demo/demo-component-b.git
-    branches: [main, v2.0, v1.0]
-    start_path: docs
+  - url: .
+    #url: https://gitlab.com/antora/demo/demo-component-b.git
+    branches: HEAD
+    #branches: [main, v2.0, v1.0]
+    start_path: demo-component-b/docs
 asciidoc:
   attributes:
     experimental: ''
