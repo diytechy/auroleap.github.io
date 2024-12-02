@@ -2,17 +2,15 @@ FROM antora/antora
 
 # "#################################################"
 # "Get the latest APT packages"
-#RUN apk update
+RUN apk update
 
 # "#################################################"
 # "Install asciidoctor-kroki dependencies.
-#RUN yarn global add asciidoctor-kroki
+RUN yarn global add asciidoctor-kroki
 
 # "#################################################"
 # "Install node.
-#RUN apk add --update nodejs npm
-
-#RUN npm i -g @antora/lunr-extension
+RUN apk add --update nodejs npm
 
 # Set working directory:
 WORKDIR /antora
