@@ -14,26 +14,10 @@ FROM antora/antora
 
 #RUN npm i -g @antora/lunr-extension
 
-# Create working folders
-# RUN mkdir -p /usr/local/Working
-
 # Set working directory:
-# WORKDIR /usr/local/Working
-
-#Setup entrypoint script:
-# 
-# ENTRYPOINT ["customep.sh"]
-
-#ENTRYPOINT ["docker-entrypoint.sh"]
-#CMD ["sh", "StartCmd.sh"]
-#CMD [".\StartCmd.sh"]
-#CMD ["Antora"]
-
 WORKDIR /antora
 
-COPY docker-entrypoint.sh /usr/local/bin/
-COPY --chmod=755 customep.sh /usr/local/bin/customep.sh
-
-ENTRYPOINT ["docker-entrypoint.sh"]
+COPY --chmod=755 ContainerSupport/customep.sh /usr/local/bin/
+ENTRYPOINT ["customep.sh"]
 
 CMD ["antora"]
