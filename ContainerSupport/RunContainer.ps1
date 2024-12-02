@@ -12,7 +12,7 @@ try {
 
 #podman run -v ${setdir}:/usr/app/antora --rm -t local/antora:auroleap
 #podman run -v ${PSScriptRoot}:/usr/app --rm -t local/antora:auroleap
-podman run -v ${setdir}:/Working/Antora --rm -t local/antora:auroleap
+podman run -v ${setdir}:/usr/Working/Antora --rm -t local/antora:auroleap
 }
 catch { "Error occured" }
 Write-Host 'Press any key to close...';

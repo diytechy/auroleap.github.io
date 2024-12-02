@@ -16,11 +16,12 @@ RUN apk add --update nodejs npm
 
 
 # Create working folders
-RUN mkdir -p /Working
-RUN mkdir -p /Working/Antora
+RUN mkdir -p /usr/Working
+RUN mkdir -p /usr/Working/Antora
 #RUN mkdir -p /usr/app/antora
 
 #Set custom entry file:
 #WORKDIR "/"
-WORKDIR "/Working"
-ENTRYPOINT "customentrypoint.sh"
+WORKDIR /usr/Working
+#ENTRYPOINT ["customentrypoint.sh"]
+CMD [""]
