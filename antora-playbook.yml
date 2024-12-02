@@ -2,7 +2,7 @@ site:
   title: AuroLeap
   # the 404 page and sitemap files only get generated when the url property is set
   url: https://docs.demo.com
-  start_page: component-b::index.adoc
+  start_page: component-a::index.adoc
 content:
   sources:
   - url: .
@@ -14,6 +14,7 @@ content:
     start_path: demo-component-a
   - url: .
     #url: https://gitlab.com/antora/demo/demo-component-b.git
+    edit_url: false
     branches: HEAD
     #branches: [main, v2.0, v1.0]
     start_path: demo-component-b/docs
@@ -27,3 +28,6 @@ ui:
   bundle:
     url: ui-bundle
     snapshot: true
+antora:
+  extensions:
+  - '@antora/lunr-extension'
