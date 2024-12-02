@@ -1,2 +1,1 @@
-podman build -t local/antora:custom -f Custom.Dockerfile .
-pause
+Powershell.exe -executionpolicy remotesigned -File  .\ContainerSupport\BuildDockerImage.ps1

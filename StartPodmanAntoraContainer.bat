@@ -1,2 +1,1 @@
-Powershell.exe -executionpolicy remotesigned -File  .\ps.ps1
-pause
+Powershell.exe -executionpolicy remotesigned -File  .\ContainerSupport\RunContainer.ps1
