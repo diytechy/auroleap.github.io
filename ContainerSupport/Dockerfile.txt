@@ -2,7 +2,10 @@ FROM antora/antora
 
 WORKDIR /antora
 
+#COPY ContainerSupport/customep.sh /usr/local/bin/
 COPY --chmod=755 ContainerSupport/customep.sh /usr/local/bin/
+
+#RUN chmod 755 /usr/local/bin/customep.sh
 
 ENTRYPOINT ["customep.sh"]
 
