@@ -14,6 +14,13 @@ RUN yarn global add asciidoctor-kroki
 # "Install node.
 RUN apk add --update nodejs npm
 
+
+# Create working folders
+RUN mkdir -p /Working
+RUN mkdir -p /Working/Antora
+#RUN mkdir -p /usr/app/antora
+
 #Set custom entry file:
-WORKDIR "/usr/app"
+#WORKDIR "/"
+WORKDIR "/Working"
 ENTRYPOINT "customentrypoint.sh"

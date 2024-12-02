@@ -1,1 +1,3 @@
-npm i @antora/lunr-extension
+$PWD
+#npm i @antora/lunr-extension
+#antora
