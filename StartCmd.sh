@@ -1,3 +1,3 @@
 #!/bin/ash
 npm i @antora/lunr-extension
-#Antora
+antora antora-playbook.yml
