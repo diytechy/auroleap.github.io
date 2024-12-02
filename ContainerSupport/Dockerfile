@@ -18,4 +18,4 @@ WORKDIR /antora
 COPY --chmod=755 ContainerSupport/customep.sh /usr/local/bin/
 ENTRYPOINT ["customep.sh"]
 
-CMD ["antora"]
+#CMD ["antora"]
