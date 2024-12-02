@@ -21,7 +21,7 @@ FROM antora/antora
 # WORKDIR /usr/local/Working
 
 #Setup entrypoint script:
-# COPY --chmod=755 customep.sh /usr/local/bin/customep.sh
+# 
 # ENTRYPOINT ["customep.sh"]
 
 #ENTRYPOINT ["docker-entrypoint.sh"]
@@ -32,6 +32,7 @@ FROM antora/antora
 WORKDIR /antora
 
 COPY docker-entrypoint.sh /usr/local/bin/
+COPY --chmod=755 customep.sh /usr/local/bin/customep.sh
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 
