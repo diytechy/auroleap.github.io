@@ -2,8 +2,8 @@ FROM antora/antora
 
 WORKDIR /antora
 
-COPY --chmod=755 ContainerSupport/docker-entrypoint.sh /usr/local/bin/
+COPY --chmod=755 ContainerSupport/customep.sh /usr/local/bin/
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["customep.sh"]
 
 CMD ["antora"]
