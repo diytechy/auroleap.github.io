@@ -28,3 +28,6 @@ ui:
   bundle:
     url: ui-bundle
     snapshot: true
+antora:
+  extensions:
+  - '@antora/lunr-extension'
