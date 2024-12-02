@@ -4,7 +4,7 @@ FROM antora/antora
 # "Get the latest APT packages"
 # "apt-get update"
 RUN apk update
-COPY --chmod=755 ContainerSupport/customentrypoint.sh /usr/local/bin/
+COPY --chmod=755 ContainerSupport/custom.entrypoint /usr/local/bin/
 
 # "#################################################"
 # "Install asciidoctor-kroki dependencies.
@@ -24,5 +24,5 @@ RUN mkdir -p /usr/local/Working/antora
 #Set custom entry file:
 #WORKDIR "/"
 WORKDIR /usr/local/Working
-ENTRYPOINT ../bin/customentrypoint.sh
-#CMD [""]
+ENTRYPOINT ../bin/custom.entrypoint
+#CMD ["Antora"]
