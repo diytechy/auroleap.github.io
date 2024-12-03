@@ -24,6 +24,9 @@ asciidoc:
     idprefix: ''
     idseparator: '-'
     page-pagination: ''
+    kroki-fetch-diagram: true
+  extensions:
+    - asciidoctor-kroki
 ui:
   bundle:
     url: ui-bundle

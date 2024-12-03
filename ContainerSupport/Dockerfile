@@ -6,7 +6,8 @@ RUN apk update
 
 # "#################################################"
 # "Install asciidoctor-kroki dependencies.
-RUN yarn global add asciidoctor-kroki
+# RUN yarn global add asciidoctor-kroki
+# Commented out as this is installed through npm
 
 # "#################################################"
 # "Install node.
