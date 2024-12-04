@@ -1,4 +1,4 @@
-= ui-macros
+= UI-macros
 :example-caption!:
 
 Asciidoctor has three user interface (UI) macros:

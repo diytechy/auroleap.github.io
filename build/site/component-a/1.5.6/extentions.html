@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Sidebar :: AuroLeap</title>
-    <link rel="canonical" href="https://docs.demo.com/component-a/1.5.6/sidebar.html">
-    <link rel="prev" href="admonition.html">
-    <link rel="next" href="ui-macros.html">
+    <title>Extentions :: AuroLeap</title>
+    <link rel="canonical" href="https://docs.demo.com/component-a/1.5.6/extentions.html">
+    <link rel="prev" href="ui-macros.html">
+    <link rel="next" href="lists/ordered-list.html">
     <meta name="generator" content="Antora 3.1.9">
     <link rel="stylesheet" href="../../_/css/site.css">
   </head>
@@ -74,13 +74,13 @@
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="admonition.html">Admonition</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="1">
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="sidebar.html">Sidebar</a>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="ui-macros.html">UI-macros</a>
   </li>
-  <li class="nav-item" data-depth="1">
+  <li class="nav-item is-current-page" data-depth="1">
     <a class="nav-link" href="extentions.html">Extentions</a>
   </li>
   <li class="nav-item" data-depth="1">
@@ -134,45 +134,58 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="inline-text-formatting.html">Component A</a></li>
-    <li><a href="sidebar.html">Sidebar</a></li>
+    <li><a href="extentions.html">Extentions</a></li>
   </ul>
 </nav>
-<div class="edit-this-page"><a href="file:///antora/demo-component-a/modules/ROOT/pages/sidebar.adoc">Edit this Page</a></div>
+<div class="edit-this-page"><a href="file:///antora/demo-component-a/modules/ROOT/pages/extentions.adoc">Edit this Page</a></div>
 </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Sidebar</h1>
-<div class="sect1">
-<h2 id="sidebar-block"><a class="anchor" href="#sidebar-block"></a>Sidebar block</h2>
+<h1 class="page">Extentions</h1>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>A sidebar can be titled and contain any type of content such as source code and images.</p>
+<p>Asciidoctor has multiple extentions.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="kroki-diagram-support"><a class="anchor" href="#kroki-diagram-support"></a>Kroki - Diagram Support</h2>
+<div class="sectionbody">
 <div class="listingblock">
-<div class="title">Sidebar</div>
+<div class="title">Kroki diagram visualizer extention</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">.Optional title of sidebar
-****
-Sidebars are used to visually separate short, auxiliary bits of content that supplement the main text.
-****</code></pre>
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">[graphviz]
+....
+digraph foo {
+  node [style=rounded]
+  node1 [shape=box]
+  node2 [fillcolor=yellow, style="rounded,filled", shape=diamond]
+  node3 [shape=record, label="{ a | b | c }"]
+
+  node1 -&gt; node2 -&gt; node3
+}
+....</code></pre>
 </div>
 </div>
-<div class="sidebarblock">
+<div class="exampleblock">
+<div class="title">Result</div>
 <div class="content">
-<div class="title">Optional title of sidebar</div>
-<div class="paragraph">
-<p>Sidebars are used to visually separate short, auxiliary bits of content that supplement the main text.</p>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-6df75e8d83787480904b4b0d6fd5f99053fb5159.svg" alt="Diagram">
+</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="admonition.html">Admonition</a></span>
-  <span class="next"><a href="ui-macros.html">UI-macros</a></span>
+  <span class="prev"><a href="ui-macros.html">UI-macros</a></span>
+  <span class="next"><a href="lists/ordered-list.html">Ordered Lists</a></span>
 </nav>
 </article>
   </div>
