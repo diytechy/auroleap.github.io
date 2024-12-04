@@ -1,4 +1,4 @@
-= I LOVE YOU FINNIAN
+= ui-macros
 :example-caption!:
 
 Asciidoctor has three user interface (UI) macros:
@@ -9,11 +9,11 @@ Asciidoctor has three user interface (UI) macros:
 
 TIP: The `:experimental:` attribute must be set in the document header, component version descriptor (_antora.yml_), or globally in your Antora playbook (_antora-playbook.yml_) to enable UI macros.
 
-==== Quad
 
-=== Triple
 
 == Button
+=== Triple
+==== Quad
 
 Communicate that a user should press a button with the button macro.
 
@@ -69,4 +69,19 @@ Select menu:View[Zoom > Reset] to reset the zoom level to the default setting.
 To save the file, select menu:File[Save].
 
 Select menu:View[Zoom > Reset] to reset the zoom level to the default setting.
+====
+
+== Image
+
+Show readers how to set an image using the image macro
+
+.Image
+----
+To display an image, insert the text as image:{Path/To/Image}[]
+
+----
+
+.Result
+====
+image:AuroLeapGraphic.png[]
 ====
